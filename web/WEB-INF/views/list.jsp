@@ -11,7 +11,10 @@
         <ul>
             <c:forEach var="comment" items="${comments}">
                 <li>
-                    <div><c:out value = "${comment.comment}"/></div><br>
+                    <div>
+                        <c:out value = "${comment.date}: "/>
+                        <c:out value = "${comment.comment}"/>
+                    </div><br>
                 </li>
             </c:forEach>
         </ul>
