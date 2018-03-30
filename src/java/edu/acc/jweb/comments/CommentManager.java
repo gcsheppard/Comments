@@ -7,4 +7,9 @@ public class CommentManager {
     public CommentManager () {
         this.list = new ArrayList<>();
     }
+    
+    public void addComment(String comment) {
+        Comment c = new Comment(comment);
+        list.add(c);
+    }
 }
