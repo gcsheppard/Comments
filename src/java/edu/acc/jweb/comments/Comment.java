@@ -7,4 +7,8 @@ public class Comment {
     public Comment (String comment) {
         this.comment = comment;
     }
+    
+    public String getComment() {
+        return comment;
+    }
 }

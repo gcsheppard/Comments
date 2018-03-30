@@ -12,4 +12,7 @@ public class CommentManager {
         Comment c = new Comment(comment);
         list.add(c);
     }
+    public ArrayList<Comment> getComments() {
+        return list;
+    }
 }
