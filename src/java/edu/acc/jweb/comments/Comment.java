@@ -31,7 +31,7 @@ public class Comment {
     }
     
     public String getDate() {
-        Format formatter = new SimpleDateFormat("MM/dd/yyyy ");
+        Format formatter = new SimpleDateFormat("MM/dd/yyyy");
         String string = formatter.format(this.date);
         return string;
     }

@@ -2,17 +2,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet" href="/Comments/styles/styles.css">
     </head>
     <body>
         <h2>Enter your comment:</h2>
         <form action="add" method="post">
-            Name: <input type="text" name="name" value="${name}"}><br>
-            Email: <input type="text" name="email" value="${email}"><br>
-            Comment: <textarea name="comment" rows="4" cols="50">${comment}</textarea>
-                     <input type="submit" value="Submit" /><br>
+            <div class="b">Name: <input type="text" name="name" value="${name}"}></div><br>
+            <div class="b">Email: <input type="text" name="email" value="${email}"></div><br>
+            <div <div class="f">Comment: <textarea name="comment" rows="4" cols="50">${comment}</textarea></div><br>
+            <div class="c"><input type="submit" value="Submit" /><br>
         </form>  
-        <br>${errors}
+            <br><div class="e">${errors}</div>
     </body>
 </html>

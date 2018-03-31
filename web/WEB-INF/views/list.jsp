@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <head>
         <link rel="stylesheet" href="/Comments/styles/styles.css">
     </head>
     <body>
@@ -11,13 +10,13 @@
         <ul>
             <c:forEach var="comment" items="${comments}">
                 <li>
-                    <div>
-                        <c:out value = "${comment.date}; ${comment.name}; ${comment.email}"/><br>
-                        <c:out value = "${comment.comment}"/>
-                    </div><br>
+                    
+                    <div class ="f"><c:out value = "${comment.comment}"/></div>
+                    <div class="a"><c:out value = "${comment.name} (${comment.email}) ${comment.date}"/></div>
+                    <br>
                 </li>
             </c:forEach>
         </ul>
-        <br><br><div><a href="/Comments/add?choice=add">Add a comment</a></div><br>
+        <br><div class="d"><a href="/Comments/add?choice=add">Add a comment</a></div><br>
     </body>
 </html>

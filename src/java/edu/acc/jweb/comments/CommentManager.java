@@ -11,6 +11,9 @@ public class CommentManager {
     public void addComment(String comment, String name, String email) {
         Comment c = new Comment(comment, name, email);
         list.add(c);
+        while (list.size() > 10) {
+            list.remove(0);
+        }
     }
     
     public ArrayList<Comment> getComments() {
