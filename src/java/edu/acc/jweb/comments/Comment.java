@@ -7,15 +7,27 @@ import java.util.Date;
 public class Comment {
     
     public String comment;
+    public String name;
+    public String email;
     public Date date;
     
-    public Comment (String comment) {
+    public Comment (String comment, String name, String email) {
         this.comment = comment;
+        this.name = name;
+        this.email = email;
         this.date = new Date();
     }
     
     public String getComment() {
-        return comment;
+        return this.comment;
+    }
+    
+    public String getname() {
+        return this.name;
+    }
+    
+    public String getEmail() {
+        return this.email;
     }
     
     public String getDate() {

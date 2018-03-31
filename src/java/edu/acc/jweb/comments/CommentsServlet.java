@@ -30,8 +30,10 @@ public class CommentsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String comment = request.getParameter("comment");
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
         CommentManager commentManager = (CommentManager) getServletContext().getAttribute("commentManager");
-        commentManager.addComment(comment);
+        commentManager.addComment(comment, name, email);
         response.sendRedirect("/Comments/list");  
     }
 }

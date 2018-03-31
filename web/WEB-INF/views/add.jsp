@@ -8,8 +8,10 @@
     <body>
         <h2>Enter your comment:</h2>
         <form action="add" method="post">
-            <textarea name="comment" rows="4" cols="50"></textarea>
-            <input type="submit" value="Submit" /><br>
+            Name: <input type="text" name="name"><br>
+            Email: <input type="text" name="email"><br>
+            Comment: <textarea name="comment" rows="4" cols="50"></textarea>
+                     <input type="submit" value="Submit" /><br>
         </form>  
     </body>
 </html>

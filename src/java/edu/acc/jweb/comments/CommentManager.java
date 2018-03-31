@@ -8,10 +8,11 @@ public class CommentManager {
         this.list = new ArrayList<>();
     }
     
-    public void addComment(String comment) {
-        Comment c = new Comment(comment);
+    public void addComment(String comment, String name, String email) {
+        Comment c = new Comment(comment, name, email);
         list.add(c);
     }
+    
     public ArrayList<Comment> getComments() {
         return list;
     }
